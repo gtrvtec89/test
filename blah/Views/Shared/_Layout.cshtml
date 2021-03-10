@@ -1,0 +1,78 @@
+﻿@using System.Web.Optimization;
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	@Scripts.Render("~/bundles/jquery")
+	<script src="https://kit.fontawesome.com/a75ff89abd.js" crossorigin="anonymous"></script>
+	@Styles.Render("~/Content/css")
+
+
+</head>
+<div class="bgImage">
+	<body style="margin:0"  >
+		<div class="topnav">
+			<a href="#home"><i class="fas fa-home"></i> Home</a>
+			<a href="#Settings"><i class="fas fa-cogs"></i> Settings</a>
+			<a href="#signOut"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+			<a href="#about"><i class="fas fa-info-circle"></i> About</a>
+
+		</div>
+		@*<div id="site-header">
+				<i id="site-icon" class="fas fa-user-music"></i>
+				<span class="full-content">Tri-State Music Events</span>
+				<span class="mobile-content">3State <i class="fas fa-music"></i></span>
+			</div>*@
+		<h1 style="text-align:center"> @ViewBag.Title</h1>
+	</body>
+
+	@*<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 Navbar
+		<div class="w3-top">
+			<div class="w3-bar w3-theme-d2 w3-left-align">
+				<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+				<a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+				<a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+				<a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+				<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+				<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+			</div>
+		</div>*@
+
+
+
+	@*<div id="site-header">
+		<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+		<a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+		<i id="site-icon" class="fas fa-user-music"></i>
+		</div>*@
+
+	@*<div class="icon-bar">
+			<a id="icon-bar-home" href="~/Home/Index" title="Go to Home"><i class="fa fa-home"></i></a>
+			@if (uCurrent.IsAuthenticated) {  // already logged in
+				<a id="icon-bar-profile" href="~/Profile/Index" title="Profile"><i class="fas fa-user-circle"></i></a>
+				<a id="icon-bar-signout" href="~/Profile/SignOut" title="Sign Out"><i class="fas fa-sign-out-alt"></i></a>
+			}
+			else { // not logged in
+				<a id="icon-bar-signin" href="~/Profile/SignIn" title="Sign In"><i class="fas fa-sign-in-alt"></i></a>
+				<a id="icon-bar-signup" href="~/Profile/SignUp" title="Sign Up"><i class="fas fa-user-plus"></i></a>
+			}
+			<a id="icon-bar-aboutus" href="~/AboutUs/Index" title="About Us"><i class="far fa-info-circle"></i></a>
+		</div>*@
+
+
+
+	<div id="workspace" style="margin-top: 20px; height:auto; width:auto; position:center">
+		@RenderBody()
+	</div>
+	@RenderSection("Scripts", required: false)
+</div>
+
+
+</html>

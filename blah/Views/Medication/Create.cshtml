@@ -1,0 +1,67 @@
+﻿@model blah.Models.Medications
+
+@{
+	ViewBag.Title = "Medication";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h2>Add/Edit Medications</h2>
+
+<div class="container">
+	<form action="action_page.php">
+
+		<table border="2" align="center" style="justify-content:center">
+			<tr>
+				<td colspan="2" align="center" style="color:black"><header><b>Medications</b></header></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblMedName">Medication Name:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strMedicationName" value="" required></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblMedDesc">Medication Description:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strMedicationDesc" value="" required></td>
+			</tr>
+
+			<tr>
+
+				<td width="50%"> <label for="lblCost">Cost:</label></td>
+				<td><input size="25" maxlength="25" type="number" name="dblCost" value="" required></td>
+			</tr>
+
+			<tr>
+
+				<td width="50%"> <label for="lblPrice">Price:</label></td>
+				<td><input size="25" maxlength="25" type="number" name="dblCost" value="" required></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblNotes">Notes:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strNotes" value="" required></td>
+			</tr>
+
+			<tr>
+
+				<td width="50%"> <label for="lblQty">Quantity:</label></td>
+				<td><input size="25" maxlength="25" type="number" name="intQuantity" value="" required></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblMethod">Method:</label></td>
+				<td>
+					<select id="titles" name="intMethodID">
+						<option value="1">Liquid</option>
+						<option value="2">Capsule</option>
+						<option value="3">Powder</option>
+					</select>
+				</td>
+
+			</tr>
+			
+		</table>
+
+	</form>
+</div>

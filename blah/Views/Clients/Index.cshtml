@@ -1,0 +1,135 @@
+﻿@model IEnumerable<blah.Models.Clients>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1Zip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO1Notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2Zip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.strO2Notes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1Zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO1Notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2Zip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.strO2Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
