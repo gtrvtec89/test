@@ -1,0 +1,63 @@
+﻿@model blah.Models.Employees
+
+@{
+    ViewBag.Title = "Employees";
+}
+
+
+
+
+
+
+
+<h2>Add/Edit Employees</h2>
+
+<div class="container">
+	<form action="action_page.php">
+
+		<table id="table" border="2" align="center" style="justify-content:center">
+			<tr>
+				<td colspan="2" align="center" style="color:black"><header><b>Employees</b></header></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblFName">First Name:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strFirstName" value="" required></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblLName">Last Name:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strLastName" value="" required></td>
+			</tr>
+			<tr>
+				<td><label for="lblTile">Job Title:</label></td>
+				<td>
+					<select id="titles" name="titles">
+						<option value="1">Vet</option>
+						<option value="2">Vet Tech</option>
+						<option value="3">Vet Assistant</option>
+						<option value="4">Receptionist</option>
+					</select>
+				</td>
+
+			</tr>
+			<tr>
+				<td><label for="lblActive">Active:</label></td>
+				<td><input id="active" name="isActive" type="checkbox" value="true" /></td>
+				<td><input name="isActive" type="hidden" value="false" /></td>
+			</tr>
+			<tr>
+				<td><label for="lblUserID">User ID:</label></td>
+				<td>
+					<select id="userid" name="userid">
+						<option value="1">User1</option>
+						<option value="2">User2</option>
+						<option value="3">User3</option>
+						<option value="4">User4</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+
+	</form>
+</div>

@@ -1,0 +1,101 @@
+﻿@model blah.Models.Pets
+
+@{
+    ViewBag.Title = "Pets";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="container">
+	<form action="action_page.php">
+
+		<table id="table" border="2" align="center" style="justify-content:center">
+			<tr>
+				<td colspan="2" align="center" style="color:black"><header><b>Add Pet</b></header></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblName">Name:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strPetName" value="" required></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblType">Species:</label></td>
+				<td>
+					<select id="fname" name="intPetTypeID">
+						<option value="1">Canine</option>
+						<option value="2">Feline</option>
+					</select>
+				</td>
+
+			</tr>
+			<tr>
+				<td><label for="lblGender">Sex:</label></td>
+				<td>
+					<select id="fname" name="intGenderID">
+						<option value="1">Male</option>
+						<option value="2">Female</option>
+					</select>
+				</td>
+			<tr>
+
+				<td width="50%"> <label for="dtmDOB">Date of Birth:</label></td>
+				<td><input size="25" maxlength="25" type="date" name="dtmDateofBirth" value="" required></td>
+			</tr>
+			<tr>
+				<td width="50%"> <label for="lblWeight">Weight:</label></td>
+				<td><input size="25" maxlength="25" type="number" name="dblWeight" value="" required></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblBlind">Blind:</label></td>
+				<td><input id="active" name="isBlind" type="checkbox" value="true" /></td>
+				<td><input name="isBlind" type="hidden" value="false" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblDeaf">Deaf:</label></td>
+				<td><input id="active" name="isDeaf" type="checkbox" value="true" /></td>
+				<td><input name="isDeaf" type="hidden" value="false" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblAggrsesive">Aggrsesive:</label></td>
+				<td><input id="active" name="isAggressive" type="checkbox" value="true" /></td>
+				<td><input name="isAggressive" type="hidden" value="false" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblDeceased">Deceased:</label></td>
+				<td><input id="active" name="isDeceased" type="checkbox" value="true" /></td>
+				<td><input name="isDeceased" type="hidden" value="false" /></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblAllergic">Allergic:</label></td>
+				<td><input id="active" name="isAllergic" type="checkbox" value="true" /></td>
+				<td><input name="isAllergic" type="hidden" value="false" /></td>
+			</tr>
+
+			<tr>
+
+				<td width="50%"> <label for="lblColor">Color:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strColor" value="" required></td>
+			</tr>
+
+			<tr>
+
+				<td width="50%"> <label for="lblNotes">Notes:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strNotes" value="" required></td>
+			</tr>
+
+			<tr>
+				<td><label for="lblActive">Active:</label></td>
+				<td><input id="active" name="isActive" type="checkbox" value="true" /></td>
+				<td><input name="isActive" type="hidden" value="false" /></td>
+			</tr>
+
+		</table>
+
+	</form>
+</div>

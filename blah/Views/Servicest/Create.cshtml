@@ -1,0 +1,45 @@
+﻿@model blah.Models.Services
+
+@{
+	ViewBag.Title = "Services";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h2>Add/Edit Services</h2>
+
+<div class="container">
+	<form action="action_page.php">
+
+		<table id="table" border="2" align="center" style="justify-content:center">
+			<tr>
+				<td colspan="2" align="center" style="color:black"><header><b>Services</b></header></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblServDesc">Service Description:</label></td>
+				<td><input size="25" maxlength="25" type="text" name="strServiceDesc" value="" required></td>
+			</tr>
+			<tr>
+
+				<td width="50%"> <label for="lblServType">Service Type:</label></td>
+				<td>
+					<select id="titles" name="intServiceTypeID">
+						<option value="1">Vaccination</option>
+						<option value="2">Preventative Care</option>
+						<option value="3">Surgery</option>
+						<option value="4">Wellness Exam</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+
+				<td width="50%"> <label for="lblPrice">Price:</label></td>
+				<td><input size="25" maxlength="25" type="number" name="dblPrice" value="" required></td>
+			</tr>
+
+		</table>
+
+	</form>
+</div>

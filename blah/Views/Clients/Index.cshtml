@@ -1,0 +1,18 @@
+﻿<table>
+	<tr>
+		<td style="background-color: #800080; color: #FFFFFF; font-family: 'Times New Roman', Times, serif; font-size: large; border-style: inset; border-width: thin">strFirstName:</td>
+		<td style="background-color: #800080; color: #FFFFFF; font-family: 'Times New Roman', Times, serif; font-size: large; border-style: inset; border-width: thin">strLastName:</td>
+	</tr>
+	<%foreach (System.Data.DataRow dr in ViewBag.ClientList.Rows)
+	{%>
+	<tr>
+		<td>
+			<%= Html.ActionLink("Edit", "Edit", new { id = dr["intOwnerID"].ToString() })%>
+			<%= Html.ActionLink("Delete", "Delete", new { id = dr["intOwnerID"].ToString() })%>
+		</td>
+		<td><%=dr["strFirstName"].ToString()%></td>
+		<td><%=dr["strLastName"].ToString() %></td>
+	</tr>
+	<%}%>
+</table>
+<%= Html.ActionLink("Add New Client", "Add") %>  
