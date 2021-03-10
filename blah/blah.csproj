@@ -130,7 +130,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Clients.cs" />
+    <Compile Include="Models\Database.cs" />
     <Compile Include="Models\Employees.cs" />
+    <Compile Include="Models\InsertClient.cs" />
     <Compile Include="Models\Medications.cs" />
     <Compile Include="Models\Pets.cs" />
     <Compile Include="Models\Services.cs" />
